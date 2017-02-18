@@ -48,9 +48,9 @@ paginate_path: "/blog/:num/"
 #  Timezone
 timezone: Europe/London
 
-include: ['_pages']
-exclude: ['bower.json']
-exclude: ['grunt']
+exclude:
+  - bower.json
+  - grunt
 
 # Conditional Stylesheets
 
