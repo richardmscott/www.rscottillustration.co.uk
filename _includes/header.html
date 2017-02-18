@@ -9,13 +9,13 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="{{ site.baseurl }}" />
 	<meta property="og:title" content="{{ site.title }}" />
-	<meta property="og:description" content="{{ site.description }}" />
-	<meta property="og:image" content="{{ site.url}}/img/social/og-profile.jpg" />
+	<meta property="og:description" content="{% if page.summary == null %}{{ site.description }}{% else %}{{ page.summary}}{% endif %}" />
+	<meta property="og:image" content="{{ site.url}}{% if page.social-image == null %}/img/social/og-profile.jpg"{% else %}{{ page.social-image}}{% endif %} />
 	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:url" content="{{ site.baseurl }}" />
+	<meta name="twitter:url" content="{{ site.url }}" />
 	<meta name="twitter:title" content="{{ site.title }}" />
-	<meta name="twitter:description" content="{{ site.description }}" />
-	<meta name="twitter:image" content="{{ site.url}}/img/social/og-profile.jpg" />
+	<meta name="twitter:description" content="{% if page.summary == null %}{{ site.description }}{% else %}{{ page.summary}}{% endif %}" />
+	<meta name="twitter:image" content="{{ site.url}}{% if page.social-image == null %}/img/social/og-profile.jpg"{% else %}{{ page.social-image}}{% endif %} />
 	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} | {{ site.title }}</title>
 	<link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" type="image/vnd.microsoft.icon" />
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">

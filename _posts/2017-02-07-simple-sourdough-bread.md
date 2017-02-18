@@ -5,6 +5,7 @@ category: Recipes
 comments: false
 layout: blog
 thumbnail-image: /img/thumbnails/sourdough-thumbnail.png
+social-image: /img/sourdough-starter.png
 published: true
 ---
 

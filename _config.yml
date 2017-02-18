@@ -15,7 +15,7 @@ gems:
 
 title: Richard Scott Freelance Cartoonist and Illustrator
 description: Want to hire a freelance cartoonist? See illustrations here and commission me today.
-url: http://www.rscottillustration.co.uk
+url: https://www.rscottillustration.co.uk
 email: info@rscottillustration.co.uk
 github: https://github.com/richardmscott/www.rscottillustration.co.uk
 copyright: "Copyright © 2017 Richard Scott. All rights reserved."
@@ -107,6 +107,12 @@ prose:
           element: "text"
           placeholder: "/img/thumbnails/placeholder-thumbnail.png"
           value: "/img/thumbnails/placeholder.jpg"
+      - name: "social-image"
+        field:
+          label: "Social Image"
+          element: "text"
+          placeholder: "/img/placeholder.png"
+          value: "/img/placeholder.png"
       - name: "layout"
         field:
           label: "Layout"
