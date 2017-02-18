@@ -3,7 +3,6 @@ aside.meta-info {
 	border-top: 1px solid $light-gray;
 	border-bottom: 1px solid $light-gray;
 	position: relative;
-	height: 60px;
 	margin-bottom: $gutter;
 	
 	p.date {
@@ -39,15 +38,26 @@ aside.meta-info {
 			float: none;
 		}
 	}
+@include media(370px) {
+	height: 60px;
+}
+	
 	@include media($desktop) {
 		border: none;
 		padding: $gutter;
 	}
 	
 	ul {
+		display: block;
+		clear: both;
+		height: 40px;
+		padding-left: 0;
+		@include media(370px) {
+		clear: none;
 		float: right;
 		display: block;
 		padding-left: 0;
+		}
 		@include media($desktop) {
 			float: none;
 		}
@@ -66,8 +76,8 @@ aside.meta-info {
 		@include transition(all 0.2s ease-in-out);
 		border: 1px solid $light-gray;
 		border-radius: 1000px;
-		width: 40px;
-		height: 40px;
+		width: 35px;
+		height: 35px;
 		margin-top: 10px;
 		display: block;
 		@include hide-text;
@@ -80,7 +90,7 @@ aside.meta-info {
 
 	a.tweet {
 		background-image: url(/img/ui/twitter-icon.png);
-		background-size: 24px 24px;
+		background-size: 20px 20px;
 		&:hover, &:focus {
 			background-image: url(/img/ui/twitter-icon-hover.png);
 		}
@@ -88,7 +98,7 @@ aside.meta-info {
 
 	a.email {
 		background-image: url(/img/ui/mail-icon.png);
-		background-size: 24px 24px;
+		background-size: 20px 20px;
 		&:hover, &:focus {
 			background-image: url(/img/ui/mail-icon-hover.png);
 		}
@@ -96,7 +106,7 @@ aside.meta-info {
 
 	a.fbshare {
 		background-image: url(/img/ui/facebook-icon.png);
-		background-size: 13px 24px;
+		background-size: 10px 20px;
 		&:hover, &:focus {
 			background-image: url(/img/ui/facebook-icon-hover.png);
 		}
