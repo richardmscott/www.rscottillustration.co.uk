@@ -1,0 +1,34 @@
+---
+type: blog
+---
+{% include header.html %}
+
+<main role="main" class="page-content m-scene blog">
+	<div  class="scene_element scene_element--fadein">
+		<div class="container">
+			<section id="content">
+				<article>
+					<header class="blog-header">
+						<h1>{{ page.title }}</h1>
+						<h4>{{ page.summary }}</h4>
+					</header>
+					<aside class="meta-info">
+						<p class="type"><a href="/{{ page.category | downcase }}/">{{ page.category }}</a></p>
+						<p class="date">{{ page.date | date_to_string }}</p>
+						<ul>
+							<li><a href="https://twitter.com/home?status={{ site.url}}{{ page.url }}" class="tweet">Tweet</a></li>
+							<li><a href="mailto:?&subject={{ page.title }}&body={{ site.url}}{{ page.url }}" class="email">Email</a></li>
+							<li><a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url}}{{ page.url }}" class="fbshare">Facebook</a></li>
+						</ul>
+					</aside>
+					<div class="blog-body">
+						{{ content }}
+						{% include comments.html %}
+					</div>
+				</article>
+			</section>
+		</div>
+	</div>
+</main>
+{% include footer.html %}
+{% include closure.html %}

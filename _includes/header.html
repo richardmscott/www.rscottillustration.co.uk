@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="{{ site.description }}">
+	<meta property="og:site_name" content="{{ site.title }}" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="{{ site.baseurl }}" />
+	<meta property="og:title" content="{{ site.title }}" />
+	<meta property="og:description" content="{{ site.description }}" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:url" content="https://www.valonline.org.uk/" />
+	<meta name="twitter:title" content="{{ site.title }}" />
+	<meta name="twitter:description" content="{{ site.description }}" />
+	<title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %} | {{ site.title }}</title>
+	<link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" type="image/vnd.microsoft.icon" />
+	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+	<script type="text/javascript" src="{{ site.baseurl }}/js/modernizr.js"></script>
+	<link rel="stylesheet" href="{{ site.baseurl }}/css/application.css">
+	{% for stylesheet in site.conditionalstylesheets %}<!--[{{ stylesheet.target }}]><style type="text/css" media="all">@import url("{{ site.baseurl }}{{ stylesheet.path }}");</style><![endif]-->{% endfor %}
+</head>
+<body>
+	<header class="navigation" role="banner">
+		<div class="navigation-wrapper">
+			<a href="/" class="logo">
+				<img src="/img/ui/logo.png" alt="Logo Image">
+			</a>
+			<a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+			<nav role="navigation">
+				<ul id="js-navigation-menu" class="navigation-menu">
+					{% for nav in site.data.nav %}
+					<li class="nav-link{% if nav.subcategories != null %} more{% endif %} {{ nav.title | slugify }} {% if page.url == nav.href %}current{% endif %}"><a href="{% if nav.subcategories != null %}javascript:void(0){% else %}{{ site.baseurl }}{{ nav.href }}{% endif %}">{{ nav.title }}{% if nav.subcategories != null %}<span class="caret"></span>{% endif %}</a>{% if nav.subcategories != null %}<ul class="submenu">{% for subcategory in nav.subcategories %}
+						<li class="{{ subcategory.subtitle | slugify }}"><a href="{{ site.baseurl }}{{ subcategory.subhref }}">{{ subcategory.subtitle }}</a></li>
+						{% endfor %}</ul>{% endif %}</li>
+						{% endfor %}
+					</ul>
+					<nav class="social-media-navigation">
+						<ul>
+							<li><a class="instagram" href="{{ site.instagram.url }}">Instagram</a></li><li><a  class="twitter" href="{{ site.twitter.url }}">Twitter</a></li><li><a class="facebook" href="{{ site.facebook.url }}">Facebook</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</nav>
+	</header>

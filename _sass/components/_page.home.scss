@@ -1,0 +1,21 @@
+section.hero-band {
+	background: #A14582;
+}
+
+section.band#projects {
+	background: whitesmoke;
+	padding-top: $gutter;
+	padding-bottom: $gutter; 
+}
+
+.page-home {
+	.hero-copy {
+		a.button {
+			background: #fff;
+			color: $green;
+			&:hover, &:focus {
+				background: $light-gray;
+			}
+		}
+	}
+}

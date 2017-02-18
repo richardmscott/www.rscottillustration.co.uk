@@ -1,0 +1,38 @@
+---
+title: My Illustrated Blog
+layout: grid
+summary: Illustrations 
+permalink: /blog/
+---
+
+<div class="grid-description"><h4>Illustrations, comics, rants, recipes and reviews.</h4>
+</div>
+
+{% for post in paginator.posts %}
+<div class="teaser-wrapper">
+	<div>
+		<a href="{{ site.baseurl }}{{ post.url }}" class="teaser{% if post.teaser-style %} {{ post.teaser-style }}{% endif %}">
+			<p class="type" aria-hidden="true">{{ post.category }}</p>
+			<h4>{{ post.title }}</h4>
+			<img src="{{ post.thumbnail-image }}">
+		</a>
+	</div>
+</div>
+{% endfor %}
+{% if paginator.total_pages > 1 %}
+<div class="pagination">
+	<ul>
+		{% if paginator.previous_page %}
+		<li><a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="previous">Previous</a></li>
+		{% else %}
+		{% endif %}
+		{% for item in (1..paginator.total_pages) %}
+		<li><a {% if paginator.page == item %}class="active" href="#"{% else %} href="{{ site.baseurl }}/blog{% if item != 1%}/{{ item }}{% endif %}"{% endif %}>{{item}}</a></li>
+		{% endfor %}
+		{% if paginator.next_page %}
+		<li><a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="next">Next</a></li>
+		{% else %}
+		{% endif %}
+	</ul>
+</div>
+{% endif %}

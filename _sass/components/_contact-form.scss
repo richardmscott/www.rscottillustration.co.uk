@@ -1,0 +1,73 @@
+.form-item {
+	clear: both;
+}
+
+.page-contact .flash-success {
+	display: none;
+}
+
+.page-contact {
+	#sidebar-second {
+		@include media($tablet) {
+			margin-top: 110px;
+			background-size: contain;
+			background-image: url(/img/contact.png);
+			background-repeat: no-repeat;
+			height: 400px;
+		}
+	}
+}
+
+
+
+#contact-form {
+	margin-top: $gutter;
+	@include media($desktop) {
+		.form-item.form-textfield {
+			label {
+				@include span-columns(2 of 8);
+				margin-top: 0;
+				padding: 0.4em;
+				&.error {
+						background: lighten($red, 40%);	
+						padding: 1em;
+						@include fill-parent;
+						margin-bottom: 1em;
+						@include media($tablet) {
+							@include span-columns(6 of 8);
+							@include shift(2 of 8);
+						}
+				}
+			}
+			input[type="text"] {
+				@include span-columns(6 of 8);
+				margin-right: 0;
+			}
+		}
+		.form-item.form-textarea {
+			label {
+				@include span-columns(2 of 8);
+				margin-top: 0;
+				padding: 0.4em;
+				&.error {
+						background: lighten($red, 40%);	
+						padding: 1em;
+						@include fill-parent;
+						margin-bottom: 1em;
+						@include media($tablet) {
+							@include span-columns(6 of 8);
+							@include shift(2 of 8);
+						}
+				}
+			}
+			textarea {
+				@include span-columns(6 of 8);
+				margin-right: 0;
+			}
+		}
+		.form-item.form-checkbox, .form-item.form-submit {
+			@include shift (2 of 8);
+			@include span-columns(6 of 8);
+		}
+	}
+}

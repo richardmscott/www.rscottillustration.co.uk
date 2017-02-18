@@ -1,0 +1,29 @@
+{
+  "name": "www.rscottillustration.co.uk",
+  "authors": [
+    "richardatval <richard.s@valonline.org.uk>"
+  ],
+  "description": "Javascript components for the Richard Scott Illustration Site.",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bourbon": "~4.2.7",
+    "neat": "~1.7.4",
+    "normalize-scss": "~3.0.3",
+    "fullcalendar": "~2.7.0",
+    "lunr.js": "~0.7.0",
+    "smoothstate": "~0.7.2",
+    "jquery-validation": "~1.15.0",
+    "masonry": "~4.1.1",
+    "imagesloaded": "~4.1.1",
+    "swipebox": "~1.4.4"
+  }
+}

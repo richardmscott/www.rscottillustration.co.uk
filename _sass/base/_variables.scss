@@ -1,0 +1,70 @@
+// Variables
+// ---------
+
+// Typography
+
+$serif: "Open Sans", serif;
+$sans-serif: "Montserrat", sans-serif;
+$base-font-family: $serif;
+$heading-font-family: $sans-serif;
+
+// Font Sizes
+$base-font-size: 20px;
+
+// Line height
+$base-line-height: 1.7;
+$heading-line-height: 1.2;
+$base-line-height-px: $base-line-height * $base-font-size;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Core Colors
+$turquoise: #009FB0;
+$purple: #A14582;
+$dark-gray: #434547;
+
+
+// Accent Colors
+$red: #C9234A;
+$dark-purple: #6E1859;
+
+// Helper Colors
+$medium-gray: #CECCC4;
+$light-gray: #C6C4B9;
+$green: #3FAC4D;
+$pink: #D84A8D;
+$white: #fff;
+
+
+// Name Colour Keys - used for automatically generating coloured elements. Only include required elements.
+$colors: (
+purple: $purple,
+red: $red,
+);
+
+// Brand Colours
+$brand-primary: $red;
+
+// Font Colors
+$base-background-color: #F4F4F4;
+$base-font-color: $dark-gray;
+$action-color: $brand-primary;
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+$modular-scale-base: em($em-base) !default;
+$modular-scale-ratio: $minor-third;
+
+// Image Directory
+
+$image-directory: "../img";

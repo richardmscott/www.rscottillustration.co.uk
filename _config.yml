@@ -1,0 +1,118 @@
+sass:
+  style: compressed
+
+#  Build settings
+markdown: kramdown
+
+gems:
+  - jekyll-coffeescript
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jekyll-feed
+   
+#  Site settings
+
+title: Richard Scott Freelance Cartoonist and Illustrator
+description: Want to hire a freelance cartoonist? See illustrations here and commission me today.
+url: http://www.rscottillustration.co.uk
+email: info@rscottillustration.co.uk
+github: https://github.com/richardmscott/www.rscottillustration.co.uk
+copyright: "Copyright © 2017 Richard Scott. All rights reserved."
+permalink: pretty
+
+#  Social media settings
+
+instagram:
+  username: "rscottillustration"
+  url: "http://www.instagram.com/rscottillustration"
+twitter:
+  username: "@rscottillustration"
+  url: "https://twitter.com/rscottillos"
+facebook:
+  username: "rscottillustration"
+  url: "http://fb.me/rscottillustration"
+
+# Services
+
+analyticstracking: "UA-35898440-1"
+
+categories:
+  - Recipes
+
+# Pagination
+
+paginate: 9
+paginate_path: "/blog/:num/"
+
+#  Timezone
+timezone: Europe/London
+
+include: ['_pages']
+exclude: ['bower.json']
+exclude: ['grunt']
+
+# Conditional Stylesheets
+
+conditionalstylesheets:
+  - target: "ie9"
+    path: "/css/ie9.css"
+
+#  Configuration for prose.io online editor
+prose:
+  ignore: 
+    - '_includes'
+    - 'assets'
+    - '_assets'
+    - '_layouts'
+    - '_plugins'
+    - '/.jekyll-metadata'
+    - 'feed.xml'
+    - 'js'
+    - 'css'
+    - '_sass'
+    - 'CNAME'
+    - '.bowerrc'
+    - '.gitignore'
+    - '404.md'
+    - 'Gemfile'
+    - 'Gemfile.lock'
+    - 'README.md'
+    - '_config.yml'
+    - 'bower.json'
+    - 'favicon.ico'
+  media: img
+  metadata:
+    _posts:
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
+      - name: "date"
+        field:
+          label: "Date"
+          element: "text"
+          value: CURRENT_DATETIME
+      - name: "summary"
+        field:
+          label: "Summary"
+          element: "textarea"
+          value: null
+      - name: "thumbnail-image"
+        field:
+          label: "Thumbnail Image"
+          element: "text"
+          placeholder: "/img/thumbnails/placeholder-thumbnail.png"
+          value: "/img/thumbnails/placeholder.jpg"
+      - name: "layout"
+        field:
+          label: "Layout"
+          element: "select"
+          value: "blog"
+          options:
+            - name: 'Blog'
+              value: 'blog'
+            - name: 'Default'
+              value: 'default'
+            - name: 'No Sidebars'
+              value: 'no-sidebars'

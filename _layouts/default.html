@@ -1,0 +1,21 @@
+---
+# Layouts must stay in HTML
+---
+{% include header.html %}
+
+<main role="main" class="page-content m-scene one-sidebar sidebar-second">
+	<div  class="scene_element scene_element--fadein">
+		<div class="container">
+			<section id="content">
+				<article>
+					{{ content }}
+				</article>
+			</section>
+			<aside id="sidebar-second">
+				<div class="box box-primary"><h3>Currently open for commissions</h3><p>If you'd like me to make a personal piece of work please just head over to my <a href="/contact">contact page</a>.</p></div>
+			</aside>
+		</div>
+	</div>
+</main>
+{% include footer.html %}
+{% include closure.html %}

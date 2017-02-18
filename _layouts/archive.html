@@ -1,0 +1,20 @@
+---
+layout: grid
+type: archive
+---
+
+<div class="grid-description">
+  {{ content }}
+</div>
+
+{% for post in site.categories[page.category] %}
+<div class="teaser-wrapper">
+	<div>
+		<div class="teaser{% if post.teaser-style %} {{ post.teaser-style }}{% endif %}">
+			<p class="type"><a href="/{{ post.category | downcase }}/">{{ post.category }}</a></p>
+			<h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+			<a tabindex=-1 aria-hidden=true href="{{ site.baseurl }}{{ post.url }}"><img src="{{ post.thumbnail-image }}"></a>
+		</div>
+	</div>
+</div>
+{% endfor %}

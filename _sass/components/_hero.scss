@@ -1,0 +1,79 @@
+.hero {  
+$base-border-radius: 3px !default;
+$action-color: #477DCA !default;
+$hero-background-top: #7F99BE; 
+$hero-background-bottom: #20392B;
+$hero-color: $base-font-color;
+$hero-background-color: #A14582;
+$gradient-angle: 10deg;
+$hero-image: '#{"" + $image-directory}/banners/hero-home.jpg';
+@include background(url($hero-image));
+background-position: center top ;
+background-repeat: no-repeat;
+background-color: $hero-background-color;
+background-size: auto 50%;
+
+.hero-inner {
+	@include outer-container;
+	@include clearfix;
+	text-align: left;
+	padding-top: 200px;
+	.hero-copy {
+		background: $dark-gray;
+		padding: flex-gutter();
+		h1 {
+			font-size: 1.6em;
+			color: #fff;
+			line-height: 1.1em;
+			margin-bottom: 0.4em;
+			a {
+				color: #fff;
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+		p {
+			color: #fff;
+			line-height: 1.4em;
+		}
+	}
+}
+
+@include media($tablet) {
+	background-size: auto 100%;
+	.hero-inner {
+	padding-top: 400px;
+}
+}
+
+@include media(950px) {
+	background-position: right top;
+	.hero-inner {
+		padding: $gutter;
+		min-height: 400px;
+			position: relative;
+		.hero-copy {
+			padding: 0;
+			background: transparent;
+			margin-top: $gutter;
+			margin-left: 12px;
+			width: 40%;
+			text-align: left;
+			h1 {
+				font-size: 2em;
+			}
+		}
+	}
+}
+
+@each $name, $color in $colors {
+	&.#{"" + $name} {
+		.hero-copy {
+			.button {
+				@extend button.#{"" + $name}
+			}
+		}
+	}
+}
+}

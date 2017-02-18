@@ -1,0 +1,105 @@
+aside.meta-info {
+	font-weight: 700;
+	border-top: 1px solid $light-gray;
+	border-bottom: 1px solid $light-gray;
+	position: relative;
+	height: 60px;
+	margin-bottom: $gutter;
+	
+	p.date {
+		color: transparentize($base-font-color, 0.4);
+		font-family: $serif;
+		margin-bottom: 0.3em;
+	}
+	
+	.type {
+		padding: 0;
+		a {
+			border-bottom: 2px solid $brand-primary;
+			display: inline-block;
+			font-family: $sans-serif;
+			margin-bottom: 1em;
+			padding: 0.8em 0 0 0;
+			text-align: left;
+			text-transform: uppercase;
+			&:hover, &:focus {
+				text-decoration: none;
+				border-bottom: 2px solid darken($brand-primary, 10%);
+			}
+		}
+	}
+	
+	p {
+		font-size: 0.8em;
+		padding-top: 1em;
+		float: left;
+		margin-bottom: 0;
+		margin-right: $gutter;
+		@include media($desktop) {
+			float: none;
+		}
+	}
+	@include media($desktop) {
+		border: none;
+		padding: $gutter;
+	}
+	
+	ul {
+		float: right;
+		display: block;
+		padding-left: 0;
+		@include media($desktop) {
+			float: none;
+		}
+		li {
+			padding-left: 0;
+			margin-right: 5px;
+			float: left;
+			&:before {
+				content: none;
+			};
+		}
+		list-style: none;
+	}
+
+	a.tweet, a.email, a.fbshare {
+		@include transition(all 0.2s ease-in-out);
+		border: 1px solid $light-gray;
+		border-radius: 1000px;
+		width: 40px;
+		height: 40px;
+		margin-top: 10px;
+		display: block;
+		@include hide-text;
+		background-position: center center;
+		background-repeat: no-repeat;
+		&:hover, &:focus {
+			border: 1px solid $brand-primary;
+		};
+	}
+
+	a.tweet {
+		background-image: url(/img/ui/twitter-icon.png);
+		background-size: 24px 24px;
+		&:hover, &:focus {
+			background-image: url(/img/ui/twitter-icon-hover.png);
+		}
+	}
+
+	a.email {
+		background-image: url(/img/ui/mail-icon.png);
+		background-size: 24px 24px;
+		&:hover, &:focus {
+			background-image: url(/img/ui/mail-icon-hover.png);
+		}
+	}
+
+	a.fbshare {
+		background-image: url(/img/ui/facebook-icon.png);
+		background-size: 13px 24px;
+		&:hover, &:focus {
+			background-image: url(/img/ui/facebook-icon-hover.png);
+		}
+	}
+
+}
