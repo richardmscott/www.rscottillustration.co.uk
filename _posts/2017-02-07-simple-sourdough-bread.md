@@ -1,9 +1,6 @@
 ---
 title: Simple Sourdough Bread
-summary: >-
-  Making bread at home actually isn't that difficult. This is my own method:
-  it's quick, fits around the working day and makes minimal mess.
-date: {}
+summary: Making bread at home actually isn't that difficult. This method is quick, fits around the working day and makes minimal mess.
 category: Recipes
 comments: false
 layout: blog
