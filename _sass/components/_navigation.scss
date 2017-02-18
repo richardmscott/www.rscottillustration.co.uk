@@ -138,8 +138,8 @@ header.navigation {
 	// The nav items
 
 	ul li.nav-link {
-		background: darken($navigation-background, 7%);
-		border-top: 1px solid darken($navigation-background, 11%);
+		background: $dark-gray;
+		border-top: 1px solid darken($dark-gray, 5%);
 		display: block;
 		line-height: $navigation-height;
 		overflow: hidden;
@@ -165,7 +165,9 @@ header.navigation {
 			width: 100%;
 			padding-left: $gutter;
 			padding-right: $navigation-submenu-padding;
+			color: $white;
 			@include media ($horizontal-bar-mode) {
+				color: $dark-gray;
 				padding: 0;
 				line-height: $base-line-height;
 				margin: 20px;
@@ -445,6 +447,7 @@ header.navigation {
 	@include hide-text;
 	&.active {
 		background-color: $navigation-nav-button-background-hover;
+		background-image: url('#{"" + $image-directory}/ui/navigation-button-close.png');
 	}
 }
 
