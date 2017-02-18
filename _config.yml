@@ -88,6 +88,11 @@ prose:
         field:
           element: "text"
           label: "title"
+      - name: "date"
+        field:
+          label: "Date"
+          element: "text"
+          value: CURRENT_DATETIME
       - name: "summary"
         field:
           label: "Summary"
@@ -108,6 +113,6 @@ prose:
             - name: 'Blog'
               value: 'blog'
             - name: 'Default'
-              value: 'defaul'
+              value: 'default'
             - name: 'No Sidebars'
               value: 'no-sidebars'
