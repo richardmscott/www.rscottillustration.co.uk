@@ -38,7 +38,7 @@ aside.meta-info {
 			float: none;
 		}
 	}
-@include media(370px) {
+@include media(355px) {
 	height: 60px;
 }
 	
@@ -52,7 +52,7 @@ aside.meta-info {
 		clear: both;
 		height: 40px;
 		padding-left: 0;
-		@include media(370px) {
+		@include media(355px) {
 		clear: none;
 		float: right;
 		display: block;
@@ -63,7 +63,7 @@ aside.meta-info {
 		}
 		li {
 			padding-left: 0;
-			margin-right: 5px;
+			margin-right: 3px;
 			float: left;
 			&:before {
 				content: none;
