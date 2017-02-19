@@ -422,24 +422,26 @@ header.navigation {
 	}
 }
 
-.logo {
+a.logo {
 	float: left;
 	max-height: $navigation-height;
-	padding-left: $navigation-padding;
-	padding-right: 2em;
-	max-width: 70%;
+	margin-left: $navigation-padding;
+	margin-right: $navigation-padding;
+	margin-top: ($navigation-height - $logo-image-height)/2;
+	width: $logo-image-width;
+	height: $logo-image-height;
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-indent: -99999px;
 	&:hover, &:focus {
 		@include transition(all  0.3s ease-in-out);
 		transform: scale(1.05);	
 	}
-	@include media ($bigscreen) {
-		width: 30%;
-	}
 
-	img {
-		max-height: $navigation-height;
-		padding: 1em 0;
-	}
+	background-image:url('#{"" + $image-directory}/ui/logo.svg');
+		.no-svg & {
+			background-image:url('#{"" + $image-directory}/ui/logo.png');
+		}
 }
 
 .navigation-menu-button {
