@@ -138,8 +138,8 @@ header.navigation {
 	// The nav items
 
 	ul li.nav-link {
-		background: $dark-gray;
-		border-top: 1px solid darken($dark-gray, 5%);
+		background: $brand-primary;
+		border-top: 1px solid darken($brand-primary, 11%);
 		display: block;
 		line-height: $navigation-height;
 		overflow: hidden;
@@ -159,15 +159,18 @@ header.navigation {
 		}
 
 		a {
-			color: $navigation-color;
+			color: white;
 			display: inline-block;
 			text-decoration: none;
 			width: 100%;
 			padding-left: $gutter;
 			padding-right: $navigation-submenu-padding;
-			color: $white;
+			&:focus,
+			&:hover {
+				text-decoration: underline;
+			}
 			@include media ($horizontal-bar-mode) {
-				color: $dark-gray;
+				color: $navigation-color;
 				padding: 0;
 				line-height: $base-line-height;
 				margin: 20px;
@@ -189,14 +192,12 @@ header.navigation {
 					visibility: visible;
 					@include transform(scaleX(1))
 				}
+				&:focus,
+				&:hover {
+					text-decoration: none;
+					color: $brand-primary;
+				}
 			}
-
-			&:focus,
-			&:hover {
-				font-weight: bold;
-				color: $brand-primary;
-			}
-
 		}
 	}
 
