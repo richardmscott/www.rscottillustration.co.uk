@@ -72,6 +72,9 @@ header.navigation {
 		width: auto;
 		@include media($bigscreen) {
 			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
 		}
 		ul li {
 			float: left;
