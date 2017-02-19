@@ -1,11 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 15.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1 Tiny//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11-tiny.dtd">
-<svg version="1.1" baseProfile="tiny" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-	 x="0px" y="0px" width="13px" height="24px" viewBox="0 0 13 24" overflow="inherit" xml:space="preserve">
-<g>
-	<path fill="#353637" d="M8.667,8.628H12l-0.389,3.683H8.667V23H4.244V12.312H2.039V8.628h2.205V6.411
-		c0-1.574,0.371-2.765,1.115-3.573C6.103,2.029,7.326,1.625,9.03,1.625h2.944v3.684h-1.842c-0.338,0-0.607,0.028-0.811,0.084
-		C9.118,5.449,8.972,5.55,8.881,5.697S8.731,5.994,8.706,6.145C8.68,6.296,8.667,6.51,8.667,6.787V8.628z"/>
-</g>
-</svg>
+<svg baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" width="13" height="24" viewBox="0 0 13 24" overflow="inherit"><path fill="#353637" d="M8.667 8.628H12l-.39 3.683H8.668V23H4.244V12.312H2.04V8.628h2.204V6.41c0-1.573.37-2.764 1.115-3.572.743-.81 1.966-1.213 3.67-1.213h2.944V5.31h-1.842c-.338 0-.607.027-.81.083-.204.056-.35.157-.44.304s-.15.297-.176.448c-.026.15-.04.365-.04.642v1.84z"/></svg>
