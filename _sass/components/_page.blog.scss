@@ -89,26 +89,44 @@ aside.meta-info {
 	}
 
 	a.tweet {
-		background-image: url(/img/ui/twitter-icon.png);
+		background-image: url(/img/ui/twitter-icon.svg);
 		background-size: 20px 20px;
+		.no-svg & {
+			background-image:url('#{"" + $image-directory}/ui/twitter-icon.png');
+		}
 		&:hover, &:focus {
-			background-image: url(/img/ui/twitter-icon-hover.png);
+			background-image: url(/img/ui/twitter-icon-hover.svg);
+			.no-svg & {
+				background-image:url('#{"" + $image-directory}/ui/twitter-icon-hover.png');
+			}
 		}
 	}
 
 	a.email {
-		background-image: url(/img/ui/mail-icon.png);
+		background-image: url(/img/ui/mail-icon.svg);
+		.no-svg & {
+			background-image:url('#{"" + $image-directory}/ui/mail-icon.png');
+		}
 		background-size: 20px 20px;
 		&:hover, &:focus {
-			background-image: url(/img/ui/mail-icon-hover.png);
+			background-image: url(/img/ui/mail-icon-hover.svg);
+			.no-svg & {
+				background-image:url('#{"" + $image-directory}/ui/mail-icon-hover.png');
+			}
 		}
 	}
 
 	a.fbshare {
-		background-image: url(/img/ui/facebook-icon.png);
+		background-image: url(/img/ui/facebook-icon.svg);
+		.no-svg & {
+			background-image:url('#{"" + $image-directory}/ui/facebook-icon-hover.png');
+		}
 		background-size: 10px 20px;
 		&:hover, &:focus {
-			background-image: url(/img/ui/facebook-icon-hover.png);
+			background-image: url(/img/ui/facebook-icon-hover.svg);
+			.no-svg & {
+				background-image:url('#{"" + $image-directory}/ui/facebook-icon-hover.png');
+			}
 		}
 	}
 

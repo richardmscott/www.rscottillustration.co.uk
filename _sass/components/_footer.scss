@@ -40,22 +40,40 @@
   }
 	  
 	  .twitter-link {
-		  background-image: url(/img/ui/twitter-icon.png);
+		  background-image: url(/img/ui/twitter-icon.svg);
+		.no-svg & {
+			background-image:url('#{"" + $image-directory}/ui/twitter-icon.png');
+		}
 		  &:hover {
-		  	background-image: url(/img/ui/twitter-icon-hover.png);
+		  	background-image: url(/img/ui/twitter-icon-hover.svg);
+			.no-svg & {
+				background-image:url('#{"" + $image-directory}/ui/twitter-icon-hover.png');
+			}
 		  };
 	  }
 	  .instagram-link {
-		  background-image: url(/img/ui/instagram-icon.png);
+		  background-image: url(/img/ui/instagram-icon.svg);
+		.no-svg & {
+			background-image:url('#{"" + $image-directory}/ui/instagram-icon.png');
+		}
 		  &:hover {
-		  	background-image: url(/img/ui/instagram-icon-hover.png);
+		  	background-image: url(/img/ui/instagram-icon-hover.svg);
+			.no-svg & {
+				background-image:url('#{"" + $image-directory}/ui/instagram-icon-hover.png');
+			}
 		  };
 	  }
 	  .facebook-link {
 		  background-position: 4px center;
-		  background-image: url(/img/ui/facebook-icon.png);
+		  background-image: url(/img/ui/facebook-icon.svg);
+		.no-svg & {
+			background-image:url('#{"" + $image-directory}/ui/facebook-icon.png');
+		}
 		  &:hover {
-		  	background-image: url(/img/ui/facebook-icon-hover.png);
+		  	background-image: url(/img/ui/facebook-icon-hover.svg);
+			.no-svg & {
+				background-image:url('#{"" + $image-directory}/ui/facebook-icon-hover.png');
+			}
 		  };
 	  }
   

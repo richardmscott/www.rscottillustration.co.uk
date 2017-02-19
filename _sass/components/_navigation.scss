@@ -90,24 +90,42 @@ header.navigation {
 				background-position: center center;
 				@include transition(all 0.2s ease-in-out);
 				&.twitter {
-					background-image: url('#{"" + $image-directory}/ui/twitter-icon.png');
+					background-image: url('#{"" + $image-directory}/ui/twitter-icon.svg');
 					background-size: 24px 24px;
+					.no-svg & {
+						background-image:url('#{"" + $image-directory}/ui/twitter-icon.png');
+					}
 					&:hover, &:focus, &.active {
-						background-image: url('#{"" + $image-directory}/ui/twitter-icon-hover.png');
+						background-image: url('#{"" + $image-directory}/ui/twitter-icon-hover.svg');
+						.no-svg & {
+							background-image:url('#{"" + $image-directory}/ui/twitter-icon-hover.png');
+						}
 					}
 				}
 				&.facebook {
-					background-image: url('#{"" + $image-directory}/ui/facebook-icon.png');
+					background-image: url('#{"" + $image-directory}/ui/facebook-icon.svg');
 					background-size: 13px 24px;
+					.no-svg & {
+						background-image:url('#{"" + $image-directory}/ui/facebook-icon.png');
+					}
 					&:hover, &:focus, &.active {
-						background-image: url('#{"" + $image-directory}/ui/facebook-icon-hover.png');
+						background-image: url('#{"" + $image-directory}/ui/facebook-icon-hover.svg');
+						.no-svg & {
+							background-image:url('#{"" + $image-directory}/ui/facebook-icon-hover.png');
+						}
 					}
 				}
 				&.instagram {
-					background-image: url('#{"" + $image-directory}/ui/instagram-icon.png');
+					background-image: url('#{"" + $image-directory}/ui/instagram-icon.svg');
+					.no-svg & {
+						background-image:url('#{"" + $image-directory}/ui/instagram-icon.png');
+					}
 					background-size: 24px 24px;
 					&:hover, &:focus, &.active {
-						background-image: url('#{"" + $image-directory}/ui/instagram-icon-hover.png');
+						background-image: url('#{"" + $image-directory}/ui/instagram-icon-hover.svg');
+						.no-svg & {
+							background-image:url('#{"" + $image-directory}/ui/instagram-icon-hover.png');
+						}
 					}
 				}
 			}
@@ -445,7 +463,10 @@ a.logo {
 }
 
 .navigation-menu-button {
-	background-image: url('#{"" + $image-directory}/ui/navigation-button.png');
+	background-image: url('#{"" + $image-directory}/ui/navigation-button.svg');
+	.no-svg & {
+		background-image:url('#{"" + $image-directory}/ui/navigation-button.png');
+	}
 	background-repeat: no-repeat;
 	background-size: 30px;
 	background-position: center center;
@@ -453,7 +474,10 @@ a.logo {
 	@include hide-text;
 	&.active {
 		background-color: $navigation-nav-button-background-hover;
-		background-image: url('#{"" + $image-directory}/ui/navigation-button-close.png');
+		background-image: url('#{"" + $image-directory}/ui/navigation-button-close.svg');
+		.no-svg & {
+			background-image:url('#{"" + $image-directory}/ui/navigation-button-close.png');
+		}
 	}
 }
 
