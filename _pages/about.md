@@ -12,6 +12,6 @@ published: true
 
 ![Self portrait of](/img/about.png)
 
-My drawing career started the day my older brother taught be how to draw googly eyes on a squared paper pad. I was fascinated about the worlds I could make on the paper, so I kept drawing and I haven't stopped since.
+My drawing career started the day my older brother taught be how to draw googly eyes on a squared paper pad. I was fascinated about the worlds I could make on the paper, so I kept drawing and I haven’t stopped since.
 
-I'm always in on the lookout for new projects whether they are editorial illustrations, wedding invites, illustrated books or one-off personal commissions please feel free to [get in touch](/contact).
+I’m always in on the lookout for new projects whether they are editorial illustrations, wedding invites, book projects or one-off personal commissions please feel free to [get in touch](/contact).
