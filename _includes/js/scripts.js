@@ -41,6 +41,11 @@ $(document).ready(function() {
 					message: "Please include a message!",
 				},
 				submitHandler: function(form) {
+                    window.dataLayer = window.dataLayer || [];
+                    window.dataLayer.push({
+                      event: 'contactform',
+                      formId: 'contact-form'
+                    });
 					form.submit();
 				}
 		});
